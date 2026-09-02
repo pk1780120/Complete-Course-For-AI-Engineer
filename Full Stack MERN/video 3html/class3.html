@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 3 - html</title>
+</head>
+<body>
+    <form action="/server" >
+        <input type="checkbox" id="age" name="age" checked>
+        <label for="age">I am above 18 years old</label>
+     <div>
+        <input type="radio" name="fruit" id="apple" value="apple"/>
+        <label for="apple">apple</label>
+
+        <input type="radio" name="fruit" id="mango" value="mango"/>
+        <label for="mango">mango</label>
+        
+        <input type="radio" name="fruit" id="banana" value="banana"/>
+        <label for="banana">banana</label>
+     </div>
+     <br>
+     <div>
+        choose your subjects:
+
+        <input type="checkbox" id="maths" name="subject" value="maths" checked>
+        <label for="maths">maths</label>
+        <input type="checkbox" id="physics" name="subject" value="physics" checked>
+        <label for="physics">physics</label>
+        <input type="checkbox" id="chemistry" name="subject" value="chemistry" checked>
+        <label for="chemistry">chemistry</label>
+     </div>
+    </br>
+    <div>
+        choose your profession:
+        <select name="profession" id="profession">
+            <option value="student">student</option>
+            <option value="teacher">teacher</option>
+            <option value="engineer">engineer</option>
+            <option value="developer">developer</option>
+        </select>
+    </div>
+    <div>
+        choose your country:
+        <select name="country" id="country">
+            <option>select your option</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">india</option>
+        </select>
+    </div>
+    <label for="vol">select your volume level:</label>
+    <input type="range" id="vol" name="vol" min="0" max="100" step="10" value="70" />
+        <br>
+        <label for="feedback">please give me your feedback</label>
+        <textarea name="feedback" id="feedback" rows="5" cols="60" placeholder="write your feedback here"></textarea>
+        <button>submit</button>
+    </form>
+</body>
+</html>

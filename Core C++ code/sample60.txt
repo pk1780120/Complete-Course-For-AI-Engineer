@@ -1,0 +1,1 @@
+cd "c:\Users\pk178\OneDrive\Desktop\c++ code\" ; if ($?) { g++ main.cpp -o main } ; if ($?) { .\main }

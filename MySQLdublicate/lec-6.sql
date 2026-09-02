@@ -1,0 +1,18 @@
+use college;
+create table workss(employee_id int,company_name varchar(20),salary int);
+alter table workss modify company_name varchar(30);
+insert into workss values(1,'techcrop',75000);
+insert into workss values(2,'innovateltd',62000);
+insert into workss values(3,'healthplus',54000);
+insert into workss values(4,'eduworks',48000);
+insert into workss values(5,'greentech',68000);
+insert into workss values(6,'techcrop',80000);
+insert into workss values(7,'innovateltd',66000);
+insert into workss values(8,'healthplus',50000);
+insert into workss values(9,'eduworks',51000);
+insert into workss values(10,'greentech',72000);
+select *from workss;
+-- find the maximum of each company;
+select max(salary), company_name from workss group by company_name;
+-- find the number of emplyee each company;
+select count(*)  from workss group by  company_name;

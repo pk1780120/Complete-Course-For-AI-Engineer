@@ -1,0 +1,17 @@
+/*div {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    margin: 10px auto;
+    box-shadow:  2px 12px 8px black;
+}*/
+div {
+    width: 600px;
+    height: 800px;
+    background-color: #a8748b;
+    margin: 100px auto;
+    background-image: url("juho-luomala-K2AWz4lXrAM-unsplash.jpg");
+    background-size: cover;
+    color: white;
+}

@@ -1,0 +1,13 @@
+.navbar{
+    background-color: aqua;
+}
+.navbar ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+
+
+
+
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Snake Water Gun - DSA Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+<div class="w-full max-w-5xl">
+  <!-- Slide Box -->
+  <div class="bg-white rounded-2xl shadow-2xl p-8 min-h-[550px] flex flex-col">
+
+    <!-- Title -->
+    <h1 id="title" class="text-4xl font-bold text-center text-purple-600 mb-2"></h1>
+    <p id="subtitle" class="text-center text-gray-600 text-lg mb-4"></p>
+    <hr class="mb-6" />
+
+    <!-- Content -->
+    <div id="content" class="flex-grow text-lg"></div>
+
+    <!-- Navigation -->
+    <div class="flex justify-between mt-6">
+      <button onclick="prevSlide()" class="px-6 py-3 bg-purple-600 text-white rounded-lg">Previous</button>
+      <span id="counter" class="font-bold"></span>
+      <button onclick="nextSlide()" class="px-6 py-3 bg-purple-600 text-white rounded-lg">Next</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const slides = [
+  {
+    title: "Snake, Water & Gun Game",
+    subtitle: "DSA Mini Project",
+    content: `
+      <div class="text-center">
+        <div class="text-7xl mb-4">🐍 💧 🔫</div>
+        <p class="text-2xl font-bold">Presented By</p>
+        <p class="text-xl">Pawan Kumar</p>
+        <p class="text-lg">B.Tech | 3rd Semester</p>
+      </div>
+    `
+  },
+  {
+    title: "Project Overview",
+    subtitle: "What is this game?",
+    content: `
+      <ul class="list-disc ml-6 space-y-2">
+        <li>Digital version of Snake-Water-Gun game</li>
+        <li>Implemented using DSA concepts</li>
+        <li>Language used: C++</li>
+        <li>Focus on time & space optimization</li>
+      </ul>
+    `
+  },
+  {
+    title: "Game Rules",
+    subtitle: "Winning Logic",
+    content: `
+      <ul class="space-y-2">
+        <li>🐍 Snake drinks 💧 Water → Snake wins</li>
+        <li>💧 Water rusts 🔫 Gun → Water wins</li>
+        <li>🔫 Gun shoots 🐍 Snake → Gun wins</li>
+        <li>Same choice → Draw</li>
+      </ul>
+    `
+  },
+  {
+    title: "Data Structure Used",
+    subtitle: "Hash Table",
+    content: `
+      <ul class="list-disc ml-6 space-y-2">
+        <li>unordered_map used for decision making</li>
+        <li>Fast lookup of winner</li>
+        <li>Efficient and scalable</li>
+      </ul>
+    `
+  },
+  {
+    title: "Time Complexity",
+    subtitle: "Performance",
+    content: `
+      <p><b>Hash lookup:</b> O(1)</p>
+      <p><b>Random choice:</b> O(1)</p>
+      <p><b>Total per round:</b> O(1)</p>
+    `
+  },
+  {
+    title: "Space Complexity",
+    subtitle: "Memory",
+    content: `
+      <p>Fixed size hash table</p>
+      <p>3 × 3 combinations</p>
+      <p><b>Overall:</b> O(1)</p>
+    `
+  },
+  {
+    title: "C++ Code Snippet",
+    subtitle: "Core Logic",
+    content: `
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-auto">#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+unordered_map<string, unordered_map<string,string>> rules;
+
+// winner logic here
+      </pre>
+    `
+  },
+  {
+    title: "Learning Outcome",
+    subtitle: "What I Learned",
+    content: `
+      <ul class="list-disc ml-6 space-y-2">
+        <li>Choosing correct data structure</li>
+        <li>Understanding Big-O notation</li>
+        <li>Practical STL usage</li>
+      </ul>
+    `
+  },
+  {
+    title: "Thank You",
+    subtitle: "End",
+    content: `
+      <div class="text-center">
+        <p class="text-3xl">🎓 Thank You 🎓</p>
+        <p class="mt-2">Questions?</p>
+      </div>
+    `
+  }
+];
+
+let index = 0;
+
+function render() {
+  document.getElementById('title').innerHTML = slides[index].title;
+  document.getElementById('subtitle').innerHTML = slides[index].subtitle;
+  document.getElementById('content').innerHTML = slides[index].content;
+  document.getElementById('counter').innerText = `${index + 1} / ${slides.length}`;
+}
+
+function nextSlide() {
+  if (index < slides.length - 1) index++;
+  render();
+}
+
+function prevSlide() {
+  if (index > 0) index--;
+  render();
+}
+
+render();
+</script>
+
+</body>
+</html>
