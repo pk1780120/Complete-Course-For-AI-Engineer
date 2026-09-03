@@ -1,3 +1,11 @@
+# operator precidence
+# a=10
+# b=4
+# c=2
+# d=4
+# print(a*b//c+d)
+# print(a+b//c*d)
+
 # A=[1,2,3,4,56,5]
 # for i in range(0,len(A)):
 #     print(A[i])   

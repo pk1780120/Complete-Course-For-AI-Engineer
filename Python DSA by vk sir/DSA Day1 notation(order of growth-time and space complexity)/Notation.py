@@ -108,13 +108,33 @@
 # joy(20)
 
 #tc=:o(n)
-def joy(n):
-    m=100
-    while n>0:
-        m=m//10
-        print(n)
-        n=n-1
-joy(120)
+# def joy(n):
+#     m=100
+#     while n>0:
+#         m=m//10
+#         print(n)
+#         n=n-1
+# joy(120)
+
+# tc=n(linear)
+# def sum1(n):
+#     total = 0  
+#     while n > 0:
+#         total=total+n  
+#         n=n-1          
+#     return total
+# m = int(input("enter the number: "))
+# result = sum1(m)
+# print(result)
+ 
+# tc=0(1)
+# def sum1(n):
+#     s=n*(n+1)//2
+#     return s
+# print(sum1(5))
+
+
+
 
   
 
