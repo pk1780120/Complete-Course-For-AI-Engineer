@@ -1,0 +1,7 @@
+plt.figure(figsize=(7, 5))
+sns.countplot(data=df, x="Glucose")
+plt.title("Glucose Distribution")
+plt.xlabel("Glucose Level")
+plt.ylabel("Number of Patients")
+plt.tight_layout()
+plt.show()

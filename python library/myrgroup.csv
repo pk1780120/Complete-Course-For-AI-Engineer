@@ -1,0 +1,10 @@
+day,city,weather,temp,windspeed
+1/1/2024,bhopal,fog,24,10
+1/2/2024,indore,sunny,32,4
+1/3/2024,bhopal,rainy,20,18
+1/4/2024,bhopal,fog,20,16
+1/5/2024,indore,sunny,35,5
+1/6/2024,bhopal,rainy,21,20
+1/7/2024,ujjain,sunny,38,3
+1/8/2024,ujjain,rainy,19,17
+1/9/2024,ujjain,fog,,
