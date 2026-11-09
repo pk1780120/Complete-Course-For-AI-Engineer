@@ -1,6 +1,6 @@
 ### order of growth
 
-# time complexity
+# time complexity   
 # space complexity
 
 ### asymptotic notation
@@ -132,6 +132,23 @@
 #     s=n*(n+1)//2
 #     return s
 # print(sum1(5))
+
+# def show1(n):
+#     if n==0:
+#         return n
+#     return show1(n-1)+n
+# print(show1(3))
+
+
+##
+# n=int(input("enter the no:"))
+digit=0
+# while (n!=0):
+    # digit=digit+1
+    # n=n//10
+# print(f"digit ={digit}")
+
+# tc=logn
 
 
 

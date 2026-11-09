@@ -19,7 +19,6 @@ class MedianFinder:
 #other method
 
 # import heapq
-
 # class MedianFinder:
 
 #     def __init__(self):
@@ -27,7 +26,6 @@ class MedianFinder:
 #         self.large = []   
 
 #     def addNum(self, num):
-
 #         heapq.heappush(self.small, -num)
 
 #         if self.large and -self.small[0] > self.large[0]:
@@ -43,7 +41,6 @@ class MedianFinder:
 #             heapq.heappush(self.small, -value)
 
 #     def findMedian(self):
-
 #         if len(self.small) > len(self.large):
 #             return -self.small[0]
 

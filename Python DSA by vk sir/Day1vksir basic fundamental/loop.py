@@ -149,13 +149,13 @@
 # why it is called duck type a=90,"hello":hw
 # how its convert source code into machine code
 # how its convert high level lang to low level lang
-# is python interpreterd language or compiler language
+# is python interpreted language or compiler language
 
 #ans:-source code are __convert_________>compiler ___> into compile file (type object code /intermediate code /byte code )_________convert______>pyhon virtual machine(pvm) /jit compiler(just in time)--(actual interpreter hota hai jo java lang se liya gya) (machine code)
 # pvm --->ki wajah se platform independent(because--like -mac,window,linux etc.) with the help of j.i.t.   
 # (jit(run time me check karti):browser me hoti--just in time compiler:) interpreter se better hai because:jit kya karega RAM ke through jit me chla jata hia(waiting time kam lagta hia) 
 # object------------pvm__(jit)--->operating system(os)
-# conclusion how to source code convert into machine code
+ 
 
 # q2.all the website which browser runs :in browser every line by line to check through interpreter(so every website in footer just in view write)
 

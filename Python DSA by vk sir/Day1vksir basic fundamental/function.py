@@ -56,7 +56,7 @@
 
 # print(mult(2)+100)
 
-# function types->(advancedfunction types:map,reduce,filter),anonomus(lembda),predefined ,userdefinsed
+# function types->(advanced function types:map,reduce,filter),anonomus(lembda),predefined ,userdefinsed
 
 # anonomus(lembda): single line only code execute this lambda function
 # my_upr=lambda x:x.upper()
@@ -71,36 +71,36 @@
 
 
     
-# my_even_odd = lambda x: "even" if (x%2==0) else "odd"
-# s = [2, 5, 6, 7, 8]
+# my_even_odd=lambda x:"even" if (x%2==0) else "odd"
+# s = [2,5,6,7,8]
 # for x in s:
 #     print(my_even_odd(x)) 
 
-# my_even_odd = lambda x:x%2==0
+# my_even_odd=lambda x:x%2==0
 # print(tuple(filter(my_even_odd,[20,40,3,45]))) #best approach
 # print(tuple(map(my_even_odd,[20,40,5,57]))) #not best approach only use in condition if-else
 
 
-#keywords argument,list comprehension,positional argument
+#keywords argument,list comprehension,positional argument  
 # recursion--3 type 
 # tail
 # head
 # recursive tree
 
-# positional argument:-we pass the value along with parameter in the same orderas defined as the function
+# positional argument:-we pass the value along with parameter in the same order as defined as the function 
 
 # def tp(name,age):
 #     print("name",name,"age",age)
 # print("pawan",23)
-# print(23,"pawan")#repalce because positonal argument
+# print(23,"pawan")#replace because positonal argument
 
-# # now when we dclare positional
+# # now when we declare positional
 # tp(age=12,name="pankaj")
 
 
 # def show(name):
 #     print(name)
-# show("soma","meena","gona","rona") #when we run then throw the error because we pass 1 argument and call mutiple values
+# show("soma","meena","gona","rona") #when we run then throw the error because we pass 1 argument and call multiple values
 
 # def show(name):
     # print(name)

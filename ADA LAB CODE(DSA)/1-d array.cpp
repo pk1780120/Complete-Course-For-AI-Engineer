@@ -52,10 +52,20 @@ int main() {
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
  
-int main() {
-    cout <<"hello world"<<endl;
-    return 0;
-}
+// int main() {
+//     cout <<"hello world"<<endl;
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int x,y;
+//     int arr[5]={};
+    
+// return 0;
+// }

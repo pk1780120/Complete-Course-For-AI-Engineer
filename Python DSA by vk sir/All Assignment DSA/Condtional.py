@@ -8,7 +8,7 @@
 # elif x<y:
 #     print("y is max:",y)
 # else:
-#     print("The value of x:",x,"and The value of y:",y ,"THEN : X=Y")
+#     print("The value of x:",x,"and The value of y:",y ,"THEN : X=Y") 
 
 # 2. Write a program to find maximum between three numbers.
 
@@ -55,29 +55,36 @@
 
 # 6. Write a program to check whether a year is leap year or not.
 
-# year = int(input("Enter year: "))
+# year=int(input("Enter year:"))
 
-# if year % 400 == 0:
+# if year%400==0:
 #     print("Leap Year",year)
-# elif year % 100 == 0:
+# elif year%100 == 0:
 #     print("Not a Leap Year",year)
-# elif year % 4 == 0:
+# elif year%4 == 0:
 #     print("Leap Year",year)
 # else:
 #     print("Not a Leap Year",year)
 
 # year = int(input("Enter year: "))
-# if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
+# if year % 400 == 0 or year % 4 == 0 and year%100!=0:
 #     print("Leap year")
 # else:
 #     print("Not a leap year")
 
 # 7. Write a program to check whether a character is alphabet or not.
-# char = int(input("Enter ASCII value: "))
-# if char in range(65, 91) or char in range(97, 123):
+# char =input("Enter ASCII value: ")
+# if char in range(65,91) or char in range(97,123):
 #     print("Alphabet:",char) 
 # else:
 #     print("Not Alphabet:",char)
+
+##M-2
+# char = input("Enter a character: ")
+# if len(char)==1 and char.isalpha():
+#     print("Alphabet")
+# else:
+#     print("Not Alphabet")
 
 
 # 8. Write a program to input any alphabet and check whether it is vowel or consonant.
@@ -90,18 +97,28 @@
 
 
 #9. Write a program to input any character and check whether it is alphabet, digit or special character.
-# char = input("Enter character: ")
-# if ('A' <= char <= 'Z') or ('a' <= char <= 'z'):
+# char=input("Enter character: ")
+# if ('A'<=char<='Z') or ('a'<=char<='z'):
 #     print("Alphabet")
-# elif '0' <= char <= '9':
+# elif '0'<=char<='9':
 #     print("Digit")
 # else:
 #     print("Special character")
 
 
+##M-2
+# ch = input("Enter any character: ")
+# if len(ch) == 1 and ch.isalpha():
+#     print("Alphabet")
+# elif len(ch) == 1 and ch.isdigit():
+#     print("Digit")
+# else:
+#     print("Special Character")
+
+
 # 10. Write a program to check whether a character is uppercase or lowercase alphabet .
 
-# char = int(input("Enter ASCII value: "))
+# char =input("Enter ASCII value: ")
 # if char in range(65, 91):
 #     print("Uppercase alphabet")
 # elif char in range(97, 123):
@@ -109,23 +126,32 @@
 # else:
 #     print("Not an alphabet")
 
+##M-2
+# ch = input("Enter a character: ")
+# if len(ch) == 1 and ch.isupper() and ch.isalpha():
+#     print("Uppercase Alphabet")
+# elif len(ch) == 1 and ch.islower() and ch.isalpha():
+#     print("Lowercase Alphabet")
+# else:
+#     print("Not an Alphabet")
+
+
 # 11. Write a program to input week number and print week day .
 
-# week = int(input("Enter week number: "))
-
-# if week == 1:
+# week_day = int(input("Enter week DAY: "))
+# if week_day == 1:
 #     print("Monday")
-# elif week == 2:
+# elif week_day == 2:
 #     print("Tuesday")
-# elif week == 3:
+# elif week_day == 3:
 #     print("Wednesday")
-# elif week == 4:
+# elif week_day == 4:
 #     print("Thursday")
-# elif week == 5:
+# elif week_day == 5:
 #     print("Friday")
-# elif week == 6:
+# elif week_day == 6:
 #     print("Saturday")
-# elif week == 7:
+# elif week_day == 7:
 #     print("Sunday")
 # else:
 #     print("Invalid week number")
@@ -133,7 +159,7 @@
 
 # 12. Write a program to input month number and print number of days in that month.
 # month = int(input("Enter month number: "))
-# if month in [1, 3, 5, 7, 8, 10, 12]:
+# if month in [1,3,5,7,8,10,12]: 
 #     print("31 days")
 # elif month in [4, 6, 9, 11]:
 #     print("30 days")
@@ -161,8 +187,9 @@
 # total = n2000 + n500 + n200 + n100 + n50 + n20 + n10
 # print("Total number of notes:", total)
 
-# 14. Write a program to input angles of a triangle and check whether triangle is valid or not.
 
+
+## 14. Write a program to input angles of a triangle and check whether triangle is valid or not.
 # a = int(input("Enter first angle: "))
 # b = int(input("Enter second angle: "))
 # c = int(input("Enter third angle: "))
@@ -195,7 +222,7 @@
 # else:
 #     print("Scalene triangle")
 
-# 17. Write a program to calculate profit or loss.
+# 17. Write a program to calculate profit or loss.Profit: Profit = SP - CP (when SP > CP)Loss: Loss = CP - SP (when CP > SP)
 
 # cp = float(input("Enter cost price: "))
 # sp = float(input("Enter selling price: "))
@@ -275,7 +302,7 @@
 #     grade = "F"
 # else:
 #     grade="invalid"
-# # print(f"Total marks:{All_Subjects}, Percentage:{percentage}% and Grade:{grade}")
+# print(f"Total marks:{All_Subjects}, Percentage:{percentage}% and Grade:{grade}")
 # print("Total Marks:", All_Subjects)
 # print("Percentage:", percentage, "%")
 # print("Grade:", grade)
@@ -284,7 +311,7 @@
 # basic_salary = float(input("Enter basic salary: "))
 
 # if basic_salary <= 10000:
-#     hra = basic_salary * 20 / 100
+#     hra = basic_salary*20 / 100
 #     da = basic_salary * 80 / 100
 
 # elif basic_salary <= 20000:

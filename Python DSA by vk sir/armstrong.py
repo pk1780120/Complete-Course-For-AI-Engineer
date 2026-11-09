@@ -6,7 +6,7 @@
 # while (n!=0):
 #     digit+=1     
 #     n=n//10
- 
+# # print(digit)
 # m=k 
 # while(k!=0):     
 #     r=k%10     
@@ -17,18 +17,18 @@
 # else:    
 #     print("not armstrong")
 
-    #right angle triangle
-# n = int(input("enter the number:"))
 
+#right angle triangle
+# n=int(input("enter the number:"))
 # for i in range(1, n+1): 
-#     for j in range(1, i+1):
+#     for j in range(1,i+1):
 #         print("*", end=" ")
-#     print()   
+#     print()    
 
 # sum 
-x = int(input("Enter value of x: "))
-n = int(input("Enter value of n: "))
-sum = 0
-for i in range(0, n+1):
-    sum = sum + (x ** i)
-print("Sum of series =", sum)
+# x = int(input("Enter value of x: "))
+# n = int(input("Enter value of n: "))
+# sum = 0
+# for i in range(n+1):
+#     sum=sum+(x**i)
+# print("Sum of series =",sum)
