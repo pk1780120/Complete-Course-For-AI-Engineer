@@ -1,0 +1,1 @@
+print("welcome to revision class Pawan!\n*****\n****\n***\n*")
